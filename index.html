@@ -1,1 +1,61 @@
+<div class="app-shell">
+  <button id="modeToggle" class="mode-toggle" type="button" aria-label="Switch to card mode">
+    Card mode
+  </button>
 
+  <main class="hero">
+    <div class="brand">
+      <div class="eyebrow">Nearby food finder</div>
+      <h1>Find restaurants near any place</h1>
+      <p>
+        Paste a location, coordinates, or a Google Maps link. Results are sorted by distance from nearest to farthest.
+      </p>
+    </div>
+
+    <section class="search-panel">
+      <label for="locationInput">Location</label>
+      <input
+        id="locationInput"
+        type="text"
+        placeholder="Try an address, lat/lng, or Google Maps link"
+        autocomplete="off"
+      />
+      <div id="locationStatus" class="status status-neutral">Paste a location to begin.</div>
+
+      <div class="controls">
+        <div class="field">
+          <label for="countInput">Show how many</label>
+          <input id="countInput" type="number" min="1" step="1" value="50" />
+        </div>
+
+        <button id="searchBtn" class="primary-btn" type="button">Search</button>
+      </div>
+
+      <div class="helper-row">
+        <div id="fetchStatus" class="status status-neutral">Waiting for a search.</div>
+        <div class="small-note">Cards use images only when they can be found. Ratings are left blank if not available.</div>
+      </div>
+    </section>
+  </main>
+
+  <section id="resultsSection" class="results-section hidden">
+    <div class="section-head">
+      <div>
+        <h2>Results</h2>
+        <p id="resultsSummary">No results yet.</p>
+      </div>
+
+      <button id="loadMoreTop" class="ghost-btn" type="button">+1 More</button>
+    </div>
+
+    <div id="resultsList" class="results-list"></div>
+
+    <div class="section-foot">
+      <button id="loadMoreBottom" class="ghost-btn" type="button">+1 More</button>
+    </div>
+  </section>
+
+  <section id="cardView" class="card-view hidden" 
+  </select>
+</div>
+</div>

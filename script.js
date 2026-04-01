@@ -911,4 +911,4 @@ els.countInput.addEventListener("keydown", (event) => {
 
 setLocationStatus("Paste a location to begin.", "neutral");
 setFetchStatus("Waiting for a search.", "neutral");
-updateModeButton();
+updateModeButton(); 
